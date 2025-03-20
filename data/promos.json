@@ -1,0 +1,808 @@
+[
+  {
+    "id": "1",
+    "title": "McDo 50% Discount",
+    "description": "Get 50% off on your favorite McDonald's meals at select branches.",
+    "applicableCards": ["BDO Gold", "Metrobank Platinum"],
+    "categories": ["Fast Food"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "McDo Ayala",
+        "type": "Fast Food",
+        "_geoloc": {
+          "lat": 10.3182,
+          "lng": 123.9052
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["no-combination"]
+    }
+  },
+  {
+    "id": "2",
+    "title": "Jollibee Family Pack",
+    "description": "Get a Family Pack meal at Jollibee for only PHP 999, serves 5.",
+    "applicableCards": ["BPI Family Savings", "UnionBank Rewards"],
+    "categories": ["Fast Food"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Jollibee Cebu",
+        "type": "Fast Food",
+        "_geoloc": {
+          "lat": 10.3157,
+          "lng": 123.8854
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 999,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["no-combination"]
+    }
+  },
+  {
+    "id": "3",
+    "title": "Starbucks Buy One Get One",
+    "description": "Buy one grande beverage and get another grande beverage free on select drinks.",
+    "applicableCards": ["Citibank Rewards", "HSBC Gold"],
+    "categories": ["Cafe"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Starbucks Ayala Center",
+        "type": "Cafe",
+        "_geoloc": {
+          "lat": 10.3112,
+          "lng": 123.8958
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid only on weekdays"]
+    }
+  },
+  {
+    "id": "4",
+    "title": "Mang Inasal Unlimited Rice",
+    "description": "Enjoy unlimited rice with every chicken meal purchased.",
+    "applicableCards": ["RCBC MyDebit", "Security Bank Mastercard"],
+    "categories": ["Filipino"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Mang Inasal SM City",
+        "type": "Filipino",
+        "_geoloc": {
+          "lat": 10.3135,
+          "lng": 123.8952
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 200,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["no takeout"]
+    }
+  },
+  {
+    "id": "5",
+    "title": "Greenwich Buy 1 Pizza, Get 1 Free",
+    "description": "Order any large pizza and get another large pizza for free.",
+    "applicableCards": ["EastWest Bank", "UCPB Gold"],
+    "categories": ["Pizza"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Greenwich SM North",
+        "type": "Pizza",
+        "_geoloc": {
+          "lat": 14.6498,
+          "lng": 121.0567
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 500,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["only on weekends"]
+    }
+  },
+  {
+    "id": "6",
+    "title": "KFC Super Bucket",
+    "description": "Get a Super Bucket of chicken with 8 pieces for only PHP 1,299.",
+    "applicableCards": ["Metrobank Visa", "BPI Credit Card"],
+    "categories": ["Fast Food"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "KFC Ayala Malls",
+        "type": "Fast Food",
+        "_geoloc": {
+          "lat": 10.3173,
+          "lng": 123.8935
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 1299,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["limited time only"]
+    }
+  },
+  {
+    "id": "7",
+    "title": "Bonchon 20% Off",
+    "description": "Enjoy 20% off on your order of chicken and rice meals.",
+    "applicableCards": ["DBP Cash Card", "Philippine National Bank"],
+    "categories": ["Fast Food"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Bonchon SM Seaside",
+        "type": "Fast Food",
+        "_geoloc": {
+          "lat": 10.3147,
+          "lng": 123.9005
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for dine-in only"]
+    }
+  },
+  {
+    "id": "8",
+    "title": "Red Ribbon Birthday Cake Promo",
+    "description": "Order a birthday cake and get a free 1 dozen of cupcakes.",
+    "applicableCards": ["UnionBank Visa", "RCBC Credit Card"],
+    "categories": ["Bakery"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Red Ribbon SM Cebu",
+        "type": "Bakery",
+        "_geoloc": {
+          "lat": 10.3150,
+          "lng": 123.8865
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 500,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for cakes only"]
+    }
+  },
+  {
+    "id": "9",
+    "title": "Shakey's Family Pizza Feast",
+    "description": "Get a family pizza feast at Shakey's for only PHP 1,199, serves 4.",
+    "applicableCards": ["BPI Gold", "Citibank Rewards"],
+    "categories": ["Pizza"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Shakey's Ayala",
+        "type": "Pizza",
+        "_geoloc": {
+          "lat": 10.3139,
+          "lng": 123.8951
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 1199,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["only for family packs"]
+    }
+  },
+  {
+    "id": "10",
+    "title": "Wendy's Free Upgrade",
+    "description": "Buy any burger meal and get a free upgrade to a large size.",
+    "applicableCards": ["UnionBank Mastercard", "HSBC Visa"],
+    "categories": ["Fast Food"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Wendy's SM Cebu",
+        "type": "Fast Food",
+        "_geoloc": {
+          "lat": 10.3154,
+          "lng": 123.8959
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["not valid on combo meals"]
+    }
+  },
+  {
+    "id": "11",
+    "title": "Chowking 2 for 1",
+    "description": "Buy any two meals and get the lower-priced meal for free.",
+    "applicableCards": ["BPI Family Savings", "Metrobank"],
+    "categories": ["Fast Food"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Chowking SM Cebu",
+        "type": "Fast Food",
+        "_geoloc": {
+          "lat": 10.3152,
+          "lng": 123.8850
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for select meals only"]
+    }
+  },
+  {
+    "id": "12",
+    "title": "The Coffee Bean & Tea Leaf 15% Off",
+    "description": "Enjoy 15% off on all beverages from 3 PM to 6 PM.",
+    "applicableCards": ["UnionBank", "RCBC"],
+    "categories": ["Cafe"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "The Coffee Bean Ayala",
+        "type": "Cafe",
+        "_geoloc": {
+          "lat": 10.3110,
+          "lng": 123.8955
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for all beverages"]
+    }
+  },
+  {
+    "id": "13",
+    "title": "Red House 10% Off",
+    "description": "Get 10% off on all seafood dishes on weekdays.",
+    "applicableCards": ["BDO Gold", "HSBC"],
+    "categories": ["Seafood"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Red House Cebu",
+        "type": "Seafood",
+        "_geoloc": {
+          "lat": 10.3172,
+          "lng": 123.8890
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 500,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for seafood dishes only"]
+    }
+  },
+  {
+    "id": "14",
+    "title": "Pancake House Free Dessert",
+    "description": "Order any main meal and get a free dessert.",
+    "applicableCards": ["EastWest Bank", "BPI"],
+    "categories": ["Cafe"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Pancake House Ayala",
+        "type": "Cafe",
+        "_geoloc": {
+          "lat": 10.3125,
+          "lng": 123.8959
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 250,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["one dessert per meal"]
+    }
+  },
+  {
+    "id": "15",
+    "title": "Ramen Nagi 20% Off",
+    "description": "Get 20% off on any ramen bowl on weekends.",
+    "applicableCards": ["RCBC Credit Card", "UnionBank Mastercard"],
+    "categories": ["Japanese"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Ramen Nagi SM Seaside",
+        "type": "Japanese",
+        "_geoloc": {
+          "lat": 10.3140,
+          "lng": 123.9015
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for dine-in only"]
+    }
+  },
+  {
+    "id": "16",
+    "title": "Cebu Original Lechon 15% Off",
+    "description": "Enjoy 15% off on any lechon order.",
+    "applicableCards": ["Metrobank", "BPI"],
+    "categories": ["Filipino"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Cebu Original Lechon Fuente",
+        "type": "Filipino",
+        "_geoloc": {
+          "lat": 10.3146,
+          "lng": 123.8845
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 1000,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for whole lechon orders only"]
+    }
+  },
+  {
+    "id": "17",
+    "title": "Bistro Manuel 10% Off",
+    "description": "Get 10% off on all lunch orders.",
+    "applicableCards": ["DBP", "HSBC Visa"],
+    "categories": ["Western"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Bistro Manuel Cebu",
+        "type": "Western",
+        "_geoloc": {
+          "lat": 10.3160,
+          "lng": 123.8912
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 500,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for lunch hours only"]
+    }
+  },
+  {
+    "id": "18",
+    "title": "Casa Verde 10% Off on Selected Meals",
+    "description": "Get 10% off on selected meals during lunch hours.",
+    "applicableCards": ["BPI", "UnionBank"],
+    "categories": ["Filipino"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Casa Verde Cebu",
+        "type": "Filipino",
+        "_geoloc": {
+          "lat": 10.3155,
+          "lng": 123.8918
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 250,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for selected meals only"]
+    }
+  },
+  {
+    "id": "19",
+    "title": "Kusina Cebu Happy Hour",
+    "description": "Enjoy buy one, get one free on selected local dishes from 4 PM to 6 PM.",
+    "applicableCards": ["RCBC", "Metrobank"],
+    "categories": ["Filipino"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Kusina Cebu IT Park",
+        "type": "Filipino",
+        "_geoloc": {
+          "lat": 10.3090,
+          "lng": 123.8953
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for dine-in only"]
+    }
+  },
+  {
+    "id": "20",
+    "title": "Zubuchon Free Soft Drink",
+    "description": "Order a whole lechon and get a free 1.5L soft drink.",
+    "applicableCards": ["BPI", "HSBC"],
+    "categories": ["Filipino"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Zubuchon Cebu",
+        "type": "Filipino",
+        "_geoloc": {
+          "lat": 10.3165,
+          "lng": 123.8957
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 2000,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for whole lechon orders only"]
+    }
+  },
+  {
+    "id": "21",
+    "title": "The Sails 15% Off",
+    "description": "Enjoy 15% off on all seafood dishes every Tuesday.",
+    "applicableCards": ["BPI", "Metrobank"],
+    "categories": ["Seafood"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "The Sails Cebu",
+        "type": "Seafood",
+        "_geoloc": {
+          "lat": 10.3073,
+          "lng": 123.9010
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 500,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for seafood dishes only"]
+    }
+  },
+  {
+    "id": "22",
+    "title": "Café de France Free Coffee",
+    "description": "Buy any pastry and get a free coffee of your choice.",
+    "applicableCards": ["RCBC", "HSBC"],
+    "categories": ["Cafe"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Café de France Cebu",
+        "type": "Cafe",
+        "_geoloc": {
+          "lat": 10.3115,
+          "lng": 123.8951
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 150,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for dine-in only"]
+    }
+  },
+  {
+    "id": "23",
+    "title": "Sushi Nori 10% Off",
+    "description": "Get 10% off on all sushi rolls on weekends.",
+    "applicableCards": ["BPI", "UnionBank"],
+    "categories": ["Japanese"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Sushi Nori Ayala Center",
+        "type": "Japanese",
+        "_geoloc": {
+          "lat": 10.3108,
+          "lng": 123.8956
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 500,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid on weekends only"]
+    }
+  },
+  {
+    "id": "24",
+    "title": "Greenwich 2 Large Pizzas for PHP 999",
+    "description": "Get two large pizzas for only PHP 999, choose from select flavors.",
+    "applicableCards": ["Metrobank", "HSBC"],
+    "categories": ["Pizza"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Greenwich Cebu IT Park",
+        "type": "Pizza",
+        "_geoloc": {
+          "lat": 10.3085,
+          "lng": 123.8957
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 999,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid on select pizzas only"]
+    }
+  },
+  {
+    "id": "25",
+    "title": "Buffalo Wild Wings Free Appetizer",
+    "description": "Order any wing platter and get a free appetizer.",
+    "applicableCards": ["BPI", "UnionBank"],
+    "categories": ["American"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Buffalo Wild Wings Cebu",
+        "type": "American",
+        "_geoloc": {
+          "lat": 10.3168,
+          "lng": 123.8952
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 500,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["one appetizer per platter"]
+    }
+  },
+  {
+    "id": "26",
+    "title": "Krispy Kreme Buy 1 Dozen, Get 1 Free",
+    "description": "Buy any dozen donuts and get another dozen for free.",
+    "applicableCards": ["RCBC", "Metrobank"],
+    "categories": ["Bakery"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Krispy Kreme Ayala",
+        "type": "Bakery",
+        "_geoloc": {
+          "lat": 10.3105,
+          "lng": 123.8954
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 800,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for original glazed donuts only"]
+    }
+  },
+  {
+    "id": "27",
+    "title": "Mongolian Grill 20% Off",
+    "description": "Get 20% off your total bill for lunch orders.",
+    "applicableCards": ["BDO", "HSBC"],
+    "categories": ["Asian"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Mongolian Grill Cebu",
+        "type": "Asian",
+        "_geoloc": {
+          "lat": 10.3143,
+          "lng": 123.9012
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 300,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for lunch hours only"]
+    }
+  },
+  {
+    "id": "28",
+    "title": "Shakey's Pizza Party Package",
+    "description": "Order the Party Package and get a free pitcher of soda.",
+    "applicableCards": ["BPI", "Metrobank"],
+    "categories": ["Pizza"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Shakey's SM Cebu",
+        "type": "Pizza",
+        "_geoloc": {
+          "lat": 10.3154,
+          "lng": 123.8847
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 1500,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for Party Package orders only"]
+    }
+  },
+  {
+    "id": "29",
+    "title": "Café Marco 10% Off",
+    "description": "Enjoy 10% off on all pasta dishes every Monday.",
+    "applicableCards": ["HSBC", "RCBC"],
+    "categories": ["Italian"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Café Marco Cebu",
+        "type": "Italian",
+        "_geoloc": {
+          "lat": 10.3152,
+          "lng": 123.9015
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 400,
+      "transactionTypes": ["dine-in"],
+      "restrictions": ["valid for pasta dishes only"]
+    }
+  },
+  {
+    "id": "30",
+    "title": "Sbarro 50% Off on Select Pizzas",
+    "description": "Get 50% off on select pizzas after 5 PM.",
+    "applicableCards": ["BPI", "UnionBank"],
+    "categories": ["Pizza"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Sbarro SM Cebu",
+        "type": "Pizza",
+        "_geoloc": {
+          "lat": 10.3151,
+          "lng": 123.8855
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid after 5 PM"]
+    }
+  },
+  {
+    "id": "31",
+    "title": "Chowking 2 for 1",
+    "description": "Buy any two meals and get the lower-priced meal for free.",
+    "applicableCards": ["BPI Family Savings", "Metrobank"],
+    "categories": ["Fast Food"],
+    "promo_period": {
+      "startDate": 1741388400,
+      "endDate": 1743030000
+    },
+    "participatingBranches": [
+      {
+        "name": "Chowking SM Cebu",
+        "type": "Fast Food",
+        "_geoloc": {
+          "lat": 10.3152,
+          "lng": 123.8850
+        }
+      }
+    ],
+    "terms": {
+      "minimumAmount": 0,
+      "transactionTypes": ["dine-in", "takeout"],
+      "restrictions": ["valid for select meals only"]
+    }
+  }
+]
