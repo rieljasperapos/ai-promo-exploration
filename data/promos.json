@@ -82,7 +82,7 @@
     "title": "Mang Inasal Unlimited Rice",
     "description": "Enjoy unlimited rice with every chicken meal purchased.",
     "applicableCards": ["RCBC MyDebit", "Security Bank Mastercard"],
-    "categories": ["Filipino"],
+    "categories": ["Fast Food"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -90,7 +90,7 @@
     "participatingBranches": [
       {
         "name": "Mang Inasal SM City",
-        "type": "Filipino",
+        "type": "Fast Food",
         "_geoloc": {
           "lat": 10.3135,
           "lng": 123.8952
@@ -108,7 +108,7 @@
     "title": "Greenwich Buy 1 Pizza, Get 1 Free",
     "description": "Order any large pizza and get another large pizza for free.",
     "applicableCards": ["EastWest Bank", "UCPB Gold"],
-    "categories": ["Pizza"],
+    "categories": ["Pasta chain"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -116,7 +116,7 @@
     "participatingBranches": [
       {
         "name": "Greenwich SM North",
-        "type": "Pizza",
+        "type": "Pasta chain",
         "_geoloc": {
           "lat": 14.6498,
           "lng": 121.0567
@@ -368,7 +368,7 @@
     "title": "Ramen Nagi 20% Off",
     "description": "Get 20% off on any ramen bowl on weekends.",
     "applicableCards": ["RCBC Credit Card", "UnionBank Mastercard"],
-    "categories": ["Japanese"],
+    "categories": ["Japanese food"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -376,7 +376,7 @@
     "participatingBranches": [
       {
         "name": "Ramen Nagi SM Seaside",
-        "type": "Japanese",
+        "type": "Japanese food",
         "_geoloc": {
           "lat": 10.314,
           "lng": 123.9015
@@ -394,7 +394,7 @@
     "title": "Cebu Original Lechon 15% Off",
     "description": "Enjoy 15% off on any lechon order.",
     "applicableCards": ["Metrobank", "BPI"],
-    "categories": ["Filipino"],
+    "categories": ["Filipino food"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -402,7 +402,7 @@
     "participatingBranches": [
       {
         "name": "Cebu Original Lechon Fuente",
-        "type": "Filipino",
+        "type": "Filipino food",
         "_geoloc": {
           "lat": 10.3146,
           "lng": 123.8845
@@ -420,7 +420,7 @@
     "title": "Bistro Manuel 10% Off",
     "description": "Get 10% off on all lunch orders.",
     "applicableCards": ["DBP", "HSBC Visa"],
-    "categories": ["Western"],
+    "categories": ["Fine dining"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -428,7 +428,7 @@
     "participatingBranches": [
       {
         "name": "Bistro Manuel Cebu",
-        "type": "Western",
+        "type": "Fine dining",
         "_geoloc": {
           "lat": 10.316,
           "lng": 123.8912
@@ -446,7 +446,7 @@
     "title": "Casa Verde 10% Off on Selected Meals",
     "description": "Get 10% off on selected meals during lunch hours.",
     "applicableCards": ["BPI", "UnionBank"],
-    "categories": ["Filipino"],
+    "categories": ["Restaurant"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -454,7 +454,7 @@
     "participatingBranches": [
       {
         "name": "Casa Verde Cebu",
-        "type": "Filipino",
+        "type": "Restaurant",
         "_geoloc": {
           "lat": 10.3155,
           "lng": 123.8918
@@ -472,7 +472,7 @@
     "title": "Kusina Cebu Happy Hour",
     "description": "Enjoy buy one, get one free on selected local dishes from 4 PM to 6 PM.",
     "applicableCards": ["RCBC", "Metrobank"],
-    "categories": ["Filipino"],
+    "categories": ["Filipino food"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -480,7 +480,7 @@
     "participatingBranches": [
       {
         "name": "Kusina Cebu IT Park",
-        "type": "Filipino",
+        "type": "Filipino food",
         "_geoloc": {
           "lat": 10.309,
           "lng": 123.8953
@@ -498,7 +498,7 @@
     "title": "Zubuchon Free Soft Drink",
     "description": "Order a whole lechon and get a free 1.5L soft drink.",
     "applicableCards": ["BPI", "HSBC"],
-    "categories": ["Filipino"],
+    "categories": ["Restaurant"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -506,7 +506,7 @@
     "participatingBranches": [
       {
         "name": "Zubuchon Cebu",
-        "type": "Filipino",
+        "type": "Restaurant",
         "_geoloc": {
           "lat": 10.3165,
           "lng": 123.8957
@@ -576,7 +576,7 @@
     "title": "Sushi Nori 10% Off",
     "description": "Get 10% off on all sushi rolls on weekends.",
     "applicableCards": ["BPI", "UnionBank"],
-    "categories": ["Japanese"],
+    "categories": ["Japanese food"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -628,7 +628,7 @@
     "title": "Buffalo Wild Wings Free Appetizer",
     "description": "Order any wing platter and get a free appetizer.",
     "applicableCards": ["BPI", "UnionBank"],
-    "categories": ["American"],
+    "categories": ["Sports bar"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -636,7 +636,7 @@
     "participatingBranches": [
       {
         "name": "Buffalo Wild Wings Cebu",
-        "type": "American",
+        "type": "Sports bar",
         "_geoloc": {
           "lat": 10.3168,
           "lng": 123.8952
@@ -680,7 +680,7 @@
     "title": "Mongolian Grill 20% Off",
     "description": "Get 20% off your total bill for lunch orders.",
     "applicableCards": ["BDO", "HSBC"],
-    "categories": ["Asian"],
+    "categories": ["Restaurant"],
     "promo_period": {
       "startDate": 1741388400,
       "endDate": 1743030000
@@ -688,7 +688,7 @@
     "participatingBranches": [
       {
         "name": "Mongolian Grill Cebu",
-        "type": "Asian",
+        "type": "Asian Restaurant",
         "_geoloc": {
           "lat": 10.3143,
           "lng": 123.9012
