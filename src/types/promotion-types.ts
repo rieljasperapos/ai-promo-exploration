@@ -67,15 +67,12 @@ export interface FilteredPromo {
   };
 }
 
-// User preferences for filtering promos
 export interface UserPreferences {
   cardTypes: string[];
   preferences: string[];
   location: GeoLocation;
-  radius: number;
 }
 
-// Geographic location coordinates
 export interface GeoLocation {
   lat: number;
   lng: number;
