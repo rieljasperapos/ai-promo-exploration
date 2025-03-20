@@ -6,7 +6,8 @@
     "build": "npx tsc",
     "dev": "nodemon src/index.ts",
     "test": "jest",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "keywords": [],
   "author": "",
