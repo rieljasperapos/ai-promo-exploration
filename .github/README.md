@@ -73,15 +73,15 @@ Content-Type: application/json
   "promos": [
     {
       "id": "promo123",
-      "name": "20% Off Electronics",
+      "name": "Buffalo Wild Wings Free Appetizer",
       "promoPeriod": {
-        "startDate": "2023-10-01",
-        "endDate": "2023-10-31"
+        "startDate": "March 1, 2025",
+        "endDate": "March 25, 2025"
       },
       "participatingBranches": [
         {
           "name": "Branch 1",
-          "type": "Retail",
+          "type": "Restaurant",
           "loc": {"lat": 14.6000, "long": 120.9800},
           "isBeyond5km": false
         }
@@ -90,9 +90,14 @@ Content-Type: application/json
         { "id": "1", "name": "gold" },
         { "id": "2", "name": "silver" }
       ],
-      "otherCriteria": {
-        "minimumAmount": { "value": 500, "currency": "PHP" },
-        "maximumAmount": { "value": 2500, "currency": "PHP" }
+      "terms": {
+        "minimumAmount": 500,
+        "transactionTypes": [
+          "dine-in"
+        ],
+        "restrictions": [
+          "one appetizer per platter"
+        ]
       }
     }
   ]

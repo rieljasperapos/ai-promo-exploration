@@ -44,8 +44,11 @@ describe('fetchFilteredPromos', () => {
             },
           ],
           applicableCards: ['Visa'],
-          minimumAmount: 600,
-          maximumAmount: 2000,
+          terms: {
+            minimumAmount: 600,
+            transactionTypes: ['Online', 'In-store'],
+            restrictions: ['Limited to weekends'],
+          },
         },
       ],
     });
@@ -59,7 +62,7 @@ describe('fetchFilteredPromos', () => {
         promoPeriod: expect.any(Object),
         participatingBranches: expect.any(Array),
         cardTypes: expect.any(Array),
-        otherCriteria: expect.any(Object),
+        terms: expect.any(Object),
       },
     ]);
   });
@@ -93,8 +96,11 @@ describe('fetchFilteredPromos', () => {
             },
           ],
           applicableCards: ['MasterCard'],
-          minimumAmount: 700,
-          maximumAmount: 2500,
+          terms: {
+            minimumAmount: 600,
+            transactionTypes: ['Online', 'In-store'],
+            restrictions: ['Limited to weekends'],
+          },
         },
       ],
     });

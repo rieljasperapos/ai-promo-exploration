@@ -6,19 +6,10 @@ import {
   UserPreferences,
   GeoLocation,
 } from '../types/promotion-types';
-import dotenv from 'dotenv';
 import { formatDate } from '../utils/date.utils';
+import { algoliaConfig } from '../configs/algolia.configs';
 
-dotenv.config();
-
-const ALGOLIA_APP_ID = process.env.ALGOLIA_APP_ID!;
-const ALGOLIA_API_KEY = process.env.ALGOLIA_API_KEY!;
-const DEFAULT_RADIUS_METERS = 5000;
-const DEFAULT_MIN_AMOUNT = 500;
-const DEFAULT_MAX_AMOUNT = 2500;
-const DEFAULT_CURRENCY = 'PHP';
-
-const client = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_API_KEY);
+const client = algoliasearch(algoliaConfig.ALGOLIA_APP_ID!, algoliaConfig.ALGOLIA_API_KEY!);
 const promoIndex = client.initIndex('promos');
 
 /**
@@ -98,7 +89,7 @@ function transformPromotion(
       isBeyond5km: !isWithinRadius(
         userLocation,
         branch._geoloc,
-        DEFAULT_RADIUS_METERS,
+        algoliaConfig.DEFAULT_RADIUS_METERS,
       ),
     };
   });
@@ -123,15 +114,10 @@ function transformPromotion(
       id: `${index + 1}`,
       name: card,
     })),
-    otherCriteria: {
-      minimumAmount: {
-        value: hit.minimumAmount || DEFAULT_MIN_AMOUNT,
-        currency: DEFAULT_CURRENCY,
-      },
-      maximumAmount: {
-        value: hit.maximumAmount || DEFAULT_MAX_AMOUNT,
-        currency: DEFAULT_CURRENCY,
-      },
+    terms: {
+      minimumAmount: hit.terms.minimumAmount,
+      transactionTypes: hit.terms.transactionTypes,
+      restrictions: hit.terms.restrictions
     },
   };
 }

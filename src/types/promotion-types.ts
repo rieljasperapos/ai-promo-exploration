@@ -30,8 +30,11 @@ export interface Promo {
     _geoloc: { lat: number; lng: number };
   }[];
   applicableCards: string[];
-  minimumAmount?: number;
-  maximumAmount?: number;
+  terms: {
+    minimumAmount: number,
+    transactionTypes: string[],
+    restrictions: string[]
+  }
 }
 
 // Transformed promo type after filtering
@@ -55,15 +58,10 @@ export interface FilteredPromo {
     id: string;
     name: string;
   }>;
-  otherCriteria: {
-    minimumAmount: {
-      value: number;
-      currency: string;
-    };
-    maximumAmount: {
-      value: number;
-      currency: string;
-    };
+  terms: {
+    minimumAmount: number,
+    transactionTypes: string[],
+    restrictions: string[]
   };
 }
 
