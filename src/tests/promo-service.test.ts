@@ -32,8 +32,17 @@ describe('fetchFilteredPromos', () => {
         {
           objectID: '1',
           title: 'Promo 1',
-          promo_period: { startDate: Math.floor(Date.now() / 1000) - 1000, endDate: Math.floor(Date.now() / 1000) + 1000 },
-          participatingBranches: [{ name: 'Branch 1', type: 'Store', _geoloc: { lat: 14.6, lng: 120.98 } }],
+          promo_period: {
+            startDate: Math.floor(Date.now() / 1000) - 1000,
+            endDate: Math.floor(Date.now() / 1000) + 1000,
+          },
+          participatingBranches: [
+            {
+              name: 'Branch 1',
+              type: 'Store',
+              _geoloc: { lat: 14.6, lng: 120.98 },
+            },
+          ],
           applicableCards: ['Visa'],
           minimumAmount: 600,
           maximumAmount: 2000,
@@ -61,7 +70,9 @@ describe('fetchFilteredPromos', () => {
     const result = await fetchFilteredPromos(mockUser);
 
     expect(mockSearch).toHaveBeenCalled();
-    expect(result).toEqual({ error: 'An error occurred while fetching promos.' });
+    expect(result).toEqual({
+      error: 'An error occurred while fetching promos.',
+    });
   });
 
   test('should return error if all promos are beyond 5km', async () => {
@@ -70,8 +81,17 @@ describe('fetchFilteredPromos', () => {
         {
           objectID: '2',
           title: 'Promo 2',
-          promo_period: { startDate: Math.floor(Date.now() / 1000) - 1000, endDate: Math.floor(Date.now() / 1000) + 1000 },
-          participatingBranches: [{ name: 'Far Branch', type: 'Store', _geoloc: { lat: 10.0, lng: 100.0 } }],
+          promo_period: {
+            startDate: Math.floor(Date.now() / 1000) - 1000,
+            endDate: Math.floor(Date.now() / 1000) + 1000,
+          },
+          participatingBranches: [
+            {
+              name: 'Far Branch',
+              type: 'Store',
+              _geoloc: { lat: 10.0, lng: 100.0 },
+            },
+          ],
           applicableCards: ['MasterCard'],
           minimumAmount: 700,
           maximumAmount: 2500,
@@ -80,6 +100,8 @@ describe('fetchFilteredPromos', () => {
     });
 
     const result = await fetchFilteredPromos(mockUser);
-    expect(result).toEqual({ error: 'All promos are beyond 5km from your location.' });
+    expect(result).toEqual({
+      error: 'All promos are beyond 5km from your location.',
+    });
   });
 });

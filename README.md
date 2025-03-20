@@ -67,6 +67,7 @@ Content-Type: application/json
 ```
 
 **Expected Response**
+
 ```JSON
 {
   "promos": [
@@ -103,14 +104,15 @@ Content-Type: application/json
 The Promotional Filtering Service exposes a single API endpoint designed to filter promotions based on user specifications. Below are the detailed descriptions of the available API endpoint, along with the request parameters and expected response formats.
 
 **Endpoint: Filter Promotions**
+
 - **URL**: `/api/promos/filter`
 - **HTTP Method**: `POST`
 
 Request Parameters
 To successfully utilize this endpoint, you must include the following parameters in the request body:
 
-| **Parameter**   | **Type**        | **Description**                                                                 | **Required** |
-|---------------|---------------|-----------------------------------------------------------------------------|------------|
-| `location`    | Object        | An object representing user location with latitude and longitude. Example: `{ "lat": 14.5995, "long": 120.9842 }` | **Yes**     |
-| `cardTypes`   | Array of Str  | An array of card types for filtering, such as `["gold", "silver"]`           | **Yes**     |
-| `preferences` | Array of Str  | An array of user preferences for promotions, e.g., `["food", "electronics"]` | **Yes**     |
+| **Parameter** | **Type**     | **Description**                                                                                                   | **Required** |
+| ------------- | ------------ | ----------------------------------------------------------------------------------------------------------------- | ------------ |
+| `location`    | Object       | An object representing user location with latitude and longitude. Example: `{ "lat": 14.5995, "long": 120.9842 }` | **Yes**      |
+| `cardTypes`   | Array of Str | An array of card types for filtering, such as `["gold", "silver"]`                                                | **Yes**      |
+| `preferences` | Array of Str | An array of user preferences for promotions, e.g., `["food", "electronics"]`                                      | **Yes**      |

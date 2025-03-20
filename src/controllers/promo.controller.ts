@@ -1,5 +1,5 @@
-import { Request, Response } from "express";
-import { fetchFilteredPromos } from "../services/promo.service";
+import { Request, Response } from 'express';
+import { fetchFilteredPromos } from '../services/promo.service';
 // import { generateAiInsight } from "../services/aiService";
 
 export const getFilteredPromos = async (req: Request, res: Response) => {
@@ -7,8 +7,8 @@ export const getFilteredPromos = async (req: Request, res: Response) => {
     const user = req.body;
 
     if (!user.location || !user.cardTypes || !user.preferences) {
-      res.status(400).json({ error: "Missing required fields" });
-      return
+      res.status(400).json({ error: 'Missing required fields' });
+      return;
     }
 
     const promos = await fetchFilteredPromos(user);
@@ -16,10 +16,10 @@ export const getFilteredPromos = async (req: Request, res: Response) => {
 
     res.send({
       // ai: aiNote,
-      promos
+      promos,
     });
   } catch (error) {
-    console.error("Error fetching promos:", error);
-    res.status(500).json({ error: "Internal Server Error" });
+    console.error('Error fetching promos:', error);
+    res.status(500).json({ error: 'Internal Server Error' });
   }
 };

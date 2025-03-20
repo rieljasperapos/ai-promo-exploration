@@ -1,6 +1,11 @@
 import algoliasearch from 'algoliasearch';
 import { isWithinRadius } from '../utils/geo.utils';
-import { Promo, FilteredPromo, UserPreferences, GeoLocation } from '../types/promotion-types';
+import {
+  Promo,
+  FilteredPromo,
+  UserPreferences,
+  GeoLocation,
+} from '../types/promotion-types';
 import dotenv from 'dotenv';
 import { formatDate } from '../utils/date.utils';
 
@@ -22,13 +27,15 @@ const promoIndex = client.initIndex('promos');
  * @param user - User preferences and location data
  * @returns Promise with filtered promotions or error message
  */
-export const fetchFilteredPromos = async (user: UserPreferences): Promise<FilteredPromo[] | { error: string }> => {
+export const fetchFilteredPromos = async (
+  user: UserPreferences,
+): Promise<FilteredPromo[] | { error: string }> => {
   try {
     const { hits } = await promoIndex.search<Promo>('', {
       facetFilters: [
-        user.cardTypes.map(card => `applicableCards:${card}`),
-        user.preferences.map(category => `categories:${category}`)
-      ]
+        user.cardTypes.map((card) => `applicableCards:${card}`),
+        user.preferences.map((category) => `categories:${category}`),
+      ],
     });
 
     // Process and filter promotions
@@ -36,24 +43,26 @@ export const fetchFilteredPromos = async (user: UserPreferences): Promise<Filter
     let hasNearbyPromo = false;
 
     const filteredPromos = hits
-      .map(hit => transformPromotion(hit, user.location, currentTimestamp))
+      .map((hit) => transformPromotion(hit, user.location, currentTimestamp))
       .filter((promo): promo is FilteredPromo => {
         if (!promo) return false;
 
-        const hasNearbyBranch = promo.participatingBranches.some(branch => !branch.isBeyond5km);
+        const hasNearbyBranch = promo.participatingBranches.some(
+          (branch) => !branch.isBeyond5km,
+        );
         if (hasNearbyBranch) hasNearbyPromo = true;
 
         return true;
       });
 
     if (!hasNearbyPromo) {
-      return { error: "All promos are beyond 5km from your location." };
+      return { error: 'All promos are beyond 5km from your location.' };
     }
 
     return filteredPromos;
   } catch (error) {
-    console.error("Error fetching promos:", error);
-    return { error: "An error occurred while fetching promos." };
+    console.error('Error fetching promos:', error);
+    return { error: 'An error occurred while fetching promos.' };
   }
 };
 
@@ -68,7 +77,7 @@ export const fetchFilteredPromos = async (user: UserPreferences): Promise<Filter
 function transformPromotion(
   hit: Promo,
   userLocation: GeoLocation,
-  currentTimestamp: number
+  currentTimestamp: number,
 ): FilteredPromo | null {
   if (!hit.participatingBranches || !Array.isArray(hit.participatingBranches)) {
     return null;
@@ -79,14 +88,18 @@ function transformPromotion(
     return null;
   }
 
-  const updatedBranches = hit.participatingBranches.map(branch => {
+  const updatedBranches = hit.participatingBranches.map((branch) => {
     if (!branch._geoloc) {
       return { ...branch, isBeyond5km: true };
     }
 
     return {
       ...branch,
-      isBeyond5km: !isWithinRadius(userLocation, branch._geoloc, DEFAULT_RADIUS_METERS)
+      isBeyond5km: !isWithinRadius(
+        userLocation,
+        branch._geoloc,
+        DEFAULT_RADIUS_METERS,
+      ),
     };
   });
 
@@ -95,30 +108,30 @@ function transformPromotion(
     name: hit.title,
     promoPeriod: {
       startDate: formatDate(startDate),
-      endDate: formatDate(endDate)
+      endDate: formatDate(endDate),
     },
-    participatingBranches: updatedBranches.map(branch => ({
+    participatingBranches: updatedBranches.map((branch) => ({
       name: branch.name,
       type: branch.type,
       loc: {
         lat: branch._geoloc?.lat ?? 0,
-        long: branch._geoloc?.lng ?? 0
+        long: branch._geoloc?.lng ?? 0,
       },
-      isBeyond5km: branch.isBeyond5km
+      isBeyond5km: branch.isBeyond5km,
     })),
     cardTypes: hit.applicableCards.map((card: string, index: number) => ({
       id: `${index + 1}`,
-      name: card
+      name: card,
     })),
     otherCriteria: {
       minimumAmount: {
         value: hit.minimumAmount || DEFAULT_MIN_AMOUNT,
-        currency: DEFAULT_CURRENCY
+        currency: DEFAULT_CURRENCY,
       },
       maximumAmount: {
         value: hit.maximumAmount || DEFAULT_MAX_AMOUNT,
-        currency: DEFAULT_CURRENCY
-      }
-    }
+        currency: DEFAULT_CURRENCY,
+      },
+    },
   };
 }

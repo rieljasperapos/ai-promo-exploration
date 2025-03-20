@@ -1,12 +1,12 @@
-// __mocks__/algoliasearch.js
+/* eslint-disable no-undef */
 const mockSearch = jest.fn().mockResolvedValue({ hits: [] });
 
 const mockInitIndex = jest.fn(() => ({
-  search: mockSearch
+  search: mockSearch,
 }));
 
 const mockClient = {
-  initIndex: mockInitIndex
+  initIndex: mockInitIndex,
 };
 
 const algoliasearch = jest.fn(() => mockClient);

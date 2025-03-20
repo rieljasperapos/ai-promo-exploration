@@ -21,9 +21,9 @@ export interface Promo {
   objectID: string;
   title: string;
   promo_period: {
-    startDate: number,
-    endDate: number
-  },
+    startDate: number;
+    endDate: number;
+  };
   participatingBranches?: {
     name: string;
     type: string;

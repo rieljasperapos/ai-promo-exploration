@@ -196,7 +196,7 @@
         "name": "Red Ribbon SM Cebu",
         "type": "Bakery",
         "_geoloc": {
-          "lat": 10.3150,
+          "lat": 10.315,
           "lng": 123.8865
         }
       }
@@ -275,7 +275,7 @@
         "type": "Fast Food",
         "_geoloc": {
           "lat": 10.3152,
-          "lng": 123.8850
+          "lng": 123.885
         }
       }
     ],
@@ -300,7 +300,7 @@
         "name": "The Coffee Bean Ayala",
         "type": "Cafe",
         "_geoloc": {
-          "lat": 10.3110,
+          "lat": 10.311,
           "lng": 123.8955
         }
       }
@@ -327,7 +327,7 @@
         "type": "Seafood",
         "_geoloc": {
           "lat": 10.3172,
-          "lng": 123.8890
+          "lng": 123.889
         }
       }
     ],
@@ -378,7 +378,7 @@
         "name": "Ramen Nagi SM Seaside",
         "type": "Japanese",
         "_geoloc": {
-          "lat": 10.3140,
+          "lat": 10.314,
           "lng": 123.9015
         }
       }
@@ -430,7 +430,7 @@
         "name": "Bistro Manuel Cebu",
         "type": "Western",
         "_geoloc": {
-          "lat": 10.3160,
+          "lat": 10.316,
           "lng": 123.8912
         }
       }
@@ -482,7 +482,7 @@
         "name": "Kusina Cebu IT Park",
         "type": "Filipino",
         "_geoloc": {
-          "lat": 10.3090,
+          "lat": 10.309,
           "lng": 123.8953
         }
       }
@@ -535,7 +535,7 @@
         "type": "Seafood",
         "_geoloc": {
           "lat": 10.3073,
-          "lng": 123.9010
+          "lng": 123.901
         }
       }
     ],
@@ -795,7 +795,7 @@
         "type": "Fast Food",
         "_geoloc": {
           "lat": 10.3152,
-          "lng": 123.8850
+          "lng": 123.885
         }
       }
     ],
