@@ -20,7 +20,7 @@ const promoIndex = client.initIndex('promos');
  */
 export const fetchFilteredPromos = async (
   user: UserType,
-): Promise<FilteredPromo[] | { error: string }> => {
+): Promise<FilteredPromo[] | { message: string }> => {
   try {
     const { hits } = await promoIndex.search<Promo>('', {
       facetFilters: [
@@ -47,17 +47,17 @@ export const fetchFilteredPromos = async (
       });
 
       if (filteredPromos.length === 0) {
-        return { error: 'No matching promotions found based on your preferences.' };
+        return { message: 'No matching promotions found based on your preferences.' };
       }
 
       if (!hasNearbyPromo) {
-        return { error: 'All promos are beyond 5km from your location.' };
+        return { message: 'All promos are beyond 5km from your location.' };
       }
 
     return filteredPromos;
   } catch (error) {
     console.error('Error fetching promos:', error);
-    return { error: 'An error occurred while fetching promos.' };
+    return { message: 'An error occurred while fetching promos.' };
   }
 };
 

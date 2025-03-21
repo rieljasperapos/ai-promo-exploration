@@ -74,7 +74,7 @@ describe('fetchFilteredPromos', () => {
 
     expect(mockSearch).toHaveBeenCalled();
     expect(result).toEqual({
-      error: 'An error occurred while fetching promos.',
+      message: 'An error occurred while fetching promos.',
     });
   });
 
@@ -107,7 +107,7 @@ describe('fetchFilteredPromos', () => {
 
     const result = await fetchFilteredPromos(mockUser);
     expect(result).toEqual({
-      error: 'All promos are beyond 5km from your location.',
+      message: 'All promos are beyond 5km from your location.',
     });
   });
 });
