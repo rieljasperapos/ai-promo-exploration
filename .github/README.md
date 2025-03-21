@@ -66,7 +66,7 @@ Content-Type: application/json
 }
 ```
 
-**Expected Response**
+#### Expected Responses
 
 ```JSON
 {
@@ -101,6 +101,26 @@ Content-Type: application/json
       }
     }
   ]
+}
+```
+
+**When the promo that fits the users data are beyond 5km**
+
+```JSON
+{
+  "promos": {
+    "message": "All promos are beyond 5km from your location."
+  }
+}
+```
+
+**No promotions matched user data**
+
+```JSON
+{
+  "promos": {
+    "message": "No matching promotions found based on your preferences."
+  }
 }
 ```
 
