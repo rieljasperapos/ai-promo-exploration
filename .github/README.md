@@ -61,7 +61,7 @@ Content-Type: application/json
 
 {
   "cardTypes": ["BDO Gold"],
-  "preferences": ["Cafe", "Fast Food"],
+  "preferences": ["Seafood", "Fast Food"],
   "location": { "lat": 10.33, "lng": 123.90 }
 }
 ```
@@ -70,10 +70,49 @@ Content-Type: application/json
 
 ```JSON
 {
-    "ai": "Feast on your favorites with McDo's 50% discount from March 8-27, 2025 at McDo Ayala, exclusively for BDO Gold and Metrobank Platinum cardholders. Don't miss it!",
+    "ai": "\"Enjoy 10% off seafood dishes at Red House Cebu with BDO Gold or HSBC cards and save 50% on dine-in or takeout at McDo Ayala with BDO Gold or Metrobank Platinum cards from March 8-27, 2025!\"",
     "promos": [
         {
-            "aiNote": "Indulge your cravings at McDo Ayala from March 8-27, 2025. Enjoy a 50% discount on dine-in or takeout with any use of BDO Gold or Metrobank Platinum card. Remember, no combination of offers allowed! Absolute delight, half the price!",
+            "aiNote": "Experience the best seafood at Red House Cebu with a 10% discount from March 8-27, 2025. This promo is only for BDO Gold and HSBC cardholders who dine-in and spend a minimum of PHP 500. Valid for seafood dishes only!",
+            "id": "cf30b8b77ffc6_dashboard_generated_id",
+            "name": "Red House 10% Off",
+            "promoPeriod": {
+                "startDate": "March 8, 2025",
+                "endDate": "March 27, 2025"
+            },
+            "participatingBranches": [
+                {
+                    "name": "Red House Cebu",
+                    "type": "Seafood",
+                    "loc": {
+                        "lat": 10.3172,
+                        "long": 123.889
+                    },
+                    "isBeyond5km": false
+                }
+            ],
+            "cardTypes": [
+                {
+                    "id": "1",
+                    "name": "BDO Gold"
+                },
+                {
+                    "id": "2",
+                    "name": "HSBC"
+                }
+            ],
+            "terms": {
+                "minimumAmount": 500,
+                "transactionTypes": [
+                    "dine-in"
+                ],
+                "restrictions": [
+                    "valid for seafood dishes only"
+                ]
+            }
+        },
+        {
+            "aiNote": "Enjoy a whopping 50% off at McDo Ayala from March 8-27, 2025! This irresistible deal is available for BDO Gold and Metrobank Platinum cardholders, for dine-in and takeout. Just remember, no combinations allowed!",
             "id": "1c7cd081e01947_dashboard_generated_id",
             "name": "McDo 50% Discount",
             "promoPeriod": {
