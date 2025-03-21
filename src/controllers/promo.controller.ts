@@ -6,12 +6,18 @@ export const getFilteredPromos = async (req: Request, res: Response) => {
   try {
     const user = req.body;
 
-    if (!user.location || !user.cardTypes || !user.preferences) {
-      res.status(400).json({ error: 'Missing required fields' });
+    if (!user.location) {
+      res.status(400).json({ error: 'Location is required' });
       return;
     }
 
-    const promos = await fetchFilteredPromos(user);
+    const userFilters = {
+      location: user.location,
+      cardTypes: user.cardTypes || [],
+      preferences: user.preferences || []
+    };
+
+    const promos = await fetchFilteredPromos(userFilters);
     const aiRepsonse = await generateAiInsight(promos);
 
     res.status(200).json(aiRepsonse);
