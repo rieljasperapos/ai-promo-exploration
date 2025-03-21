@@ -3,7 +3,7 @@ import { isWithinRadius } from '../utils/geo.utils';
 import {
   Promo,
   FilteredPromo,
-  UserPreferences,
+  UserType,
   GeoLocation,
 } from '../types/promotion-types';
 import { formatDate } from '../utils/date.utils';
@@ -19,7 +19,7 @@ const promoIndex = client.initIndex('promos');
  * @returns Promise with filtered promotions or error message
  */
 export const fetchFilteredPromos = async (
-  user: UserPreferences,
+  user: UserType,
 ): Promise<FilteredPromo[] | { error: string }> => {
   try {
     const { hits } = await promoIndex.search<Promo>('', {

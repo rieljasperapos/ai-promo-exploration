@@ -65,7 +65,7 @@ export interface FilteredPromo {
   };
 }
 
-export interface UserPreferences {
+export interface UserType {
   cardTypes: string[];
   preferences: string[];
   location: GeoLocation;

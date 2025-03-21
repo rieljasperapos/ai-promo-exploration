@@ -1,5 +1,5 @@
 import { SearchClient, SearchIndex } from 'algoliasearch';
-import { UserPreferences } from '../types/promotion-types';
+import { UserType } from '../types/promotion-types';
 
 const mockSearch = jest.fn();
 const mockIndex: Partial<SearchIndex> = {
@@ -15,7 +15,7 @@ jest.mock('algoliasearch', () => {
 
 import { fetchFilteredPromos } from '../services/promo.service';
 
-const mockUser: UserPreferences = {
+const mockUser: UserType = {
   location: { lat: 14.5995, lng: 120.9842 },
   preferences: ['Food', 'Shopping'],
   cardTypes: ['Visa', 'MasterCard'],
