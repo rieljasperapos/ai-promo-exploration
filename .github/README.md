@@ -187,5 +187,5 @@ To successfully utilize this endpoint, you must include the following parameters
 | **Parameter** | **Type**     | **Description**                                                                                                   | **Required** |
 | ------------- | ------------ | ----------------------------------------------------------------------------------------------------------------- | ------------ |
 | `location`    | Object       | An object representing user location with latitude and longitude. Example: `{ "lat": 14.5995, "long": 120.9842 }` | **Yes**      |
-| `cardTypes`   | Array of Str | An array of card types for filtering, such as `["gold", "silver"]`                                                | **Yes**      |
-| `preferences` | Array of Str | An array of user preferences for promotions, e.g., `["food", "electronics"]`                                      | **Yes**      |
+| `cardTypes`   | Array of Str | An array of card types for filtering, such as `["gold", "silver"]`                                                | **Optional** |
+| `preferences` | Array of Str | An array of user preferences for promotions, e.g., `["food", "electronics"]`                                      | **Optional** |
