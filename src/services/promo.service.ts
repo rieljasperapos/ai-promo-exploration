@@ -46,9 +46,13 @@ export const fetchFilteredPromos = async (
         return true;
       });
 
-    if (!hasNearbyPromo) {
-      return { error: 'All promos are beyond 5km from your location.' };
-    }
+      if (filteredPromos.length === 0) {
+        return { error: 'No matching promotions found based on your preferences.' };
+      }
+
+      if (!hasNearbyPromo) {
+        return { error: 'All promos are beyond 5km from your location.' };
+      }
 
     return filteredPromos;
   } catch (error) {
