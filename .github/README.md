@@ -56,13 +56,13 @@ Example Request 1: Successful Filtering
 
 ```JSON
 POST /api/promos/filter HTTP/1.1
-Host: localhost:5000
+Host: localhost:8080
 Content-Type: application/json
 
 {
-  "location": { "lat": 14.5995, "long": 120.9842 },
-  "cardTypes": ["gold", "silver"],
-  "preferences": ["food", "electronics"]
+  "cardTypes": ["BDO Gold"],
+  "preferences": ["Cafe", "Fast Food"],
+  "location": { "lat": 10.33, "lng": 123.90 }
 }
 ```
 
@@ -70,37 +70,49 @@ Content-Type: application/json
 
 ```JSON
 {
-  "promos": [
-    {
-      "id": "promo123",
-      "name": "Buffalo Wild Wings Free Appetizer",
-      "promoPeriod": {
-        "startDate": "March 1, 2025",
-        "endDate": "March 25, 2025"
-      },
-      "participatingBranches": [
+    "ai": "Feast on your favorites with McDo's 50% discount from March 8-27, 2025 at McDo Ayala, exclusively for BDO Gold and Metrobank Platinum cardholders. Don't miss it!",
+    "promos": [
         {
-          "name": "Branch 1",
-          "type": "Restaurant",
-          "loc": {"lat": 14.6000, "long": 120.9800},
-          "isBeyond5km": false
+            "aiNote": "Indulge your cravings at McDo Ayala from March 8-27, 2025. Enjoy a 50% discount on dine-in or takeout with any use of BDO Gold or Metrobank Platinum card. Remember, no combination of offers allowed! Absolute delight, half the price!",
+            "id": "1c7cd081e01947_dashboard_generated_id",
+            "name": "McDo 50% Discount",
+            "promoPeriod": {
+                "startDate": "March 8, 2025",
+                "endDate": "March 27, 2025"
+            },
+            "participatingBranches": [
+                {
+                    "name": "McDo Ayala",
+                    "type": "Fast Food",
+                    "loc": {
+                        "lat": 10.3182,
+                        "long": 123.9052
+                    },
+                    "isBeyond5km": false
+                }
+            ],
+            "cardTypes": [
+                {
+                    "id": "1",
+                    "name": "BDO Gold"
+                },
+                {
+                    "id": "2",
+                    "name": "Metrobank Platinum"
+                }
+            ],
+            "terms": {
+                "minimumAmount": 0,
+                "transactionTypes": [
+                    "dine-in",
+                    "takeout"
+                ],
+                "restrictions": [
+                    "no-combination"
+                ]
+            }
         }
-      ],
-      "cardTypes": [
-        { "id": "1", "name": "gold" },
-        { "id": "2", "name": "silver" }
-      ],
-      "terms": {
-        "minimumAmount": 500,
-        "transactionTypes": [
-          "dine-in"
-        ],
-        "restrictions": [
-          "one appetizer per platter"
-        ]
-      }
-    }
-  ]
+    ]
 }
 ```
 
@@ -108,9 +120,7 @@ Content-Type: application/json
 
 ```JSON
 {
-  "promos": {
     "message": "All promos are beyond 5km from your location."
-  }
 }
 ```
 
@@ -118,9 +128,8 @@ Content-Type: application/json
 
 ```JSON
 {
-  "promos": {
-    "message": "No matching promotions found based on your preferences."
-  }
+    "ai": "No available promotions at the moment.",
+    "promos": []
 }
 ```
 

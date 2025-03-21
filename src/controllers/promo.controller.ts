@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { fetchFilteredPromos } from '../services/promo.service';
-// import { generateAiInsight } from "../services/aiService";
+import { generateAiInsight } from '../services/ai.service';
 
 export const getFilteredPromos = async (req: Request, res: Response) => {
   try {
@@ -12,12 +12,9 @@ export const getFilteredPromos = async (req: Request, res: Response) => {
     }
 
     const promos = await fetchFilteredPromos(user);
-    // const aiNote = await generateAiInsight(promos);
+    const aiRepsonse = await generateAiInsight(promos);
 
-    res.send({
-      // ai: aiNote,
-      promos,
-    });
+    res.status(200).json(aiRepsonse);
   } catch (error) {
     console.error('Error fetching promos:', error);
     res.status(500).json({ error: 'Internal Server Error' });
